@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Passcode</title>
+    <title>Our Valentine</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #ffebee;
+            background: rgb(215, 208, 255, 0.4) url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: luminosity;
             color: white;
             margin: 0;
             padding: 0;
@@ -16,6 +18,12 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+        h1 {
+            text-shadow: -2px -2px 0 rgb(252, 230, 230), 2px -2px 0 rgb(252, 230, 230), -2px 2px 0 rgb(252, 230, 230), 2px 2px 0 rgb(252, 230, 230);
+        }
+        p {
+            text-shadow: -2px -2px 0 rgb(252, 230, 230), 2px -2px 0 rgb(252, 230, 230), -2px 2px 0 rgb(252, 230, 230), 2px 2px 0 rgb(252, 230, 230);
         }
         .container {
             display: flex;
@@ -43,6 +51,7 @@
         }
         .key {
             background-color: #d81b60;
+            text-align: center;
             color: white;
             padding: 20px;
             font-size: 1.5em;
@@ -94,7 +103,7 @@
             <button class="key zero-key" onclick="enterDigit(0)">0</button>
             <button class="clear-button" onclick="clearPasscode()">Clear</button>
         </div>
-        <h1 class ="hidden-message" id="hidden-message" style="color: rgb(138, 137, 137);">Hint : Our Aniversary</h1>
+        <h1 class ="hidden-message" id="hidden-message" style="color: rgb(82, 82, 82);">Hint : Our Aniversary</h1>
     </div>
 
     <script>

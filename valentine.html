@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Surprise</title>
+    <title>Valentine's Surprise For FANGFANG</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #ffebee;
-            color: #d81b60;
+            /* background-color: #ffebee; */
+            background: rgb(215, 208, 255, 0.4) url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: luminosity;
+            opacity: 1; 
+            color: #ff005d;
             margin: 0;
             padding: 0;
         }
@@ -18,13 +22,17 @@
         }
         h1 {
             font-size: 2.5em;
+            text-shadow: -2px -2px 0 rgb(252, 230, 230), 2px -2px 0 rgb(252, 230, 230), -2px 2px 0 rgb(252, 230, 230), 2px 2px 0 rgb(252, 230, 230);
+        }
+        p {
+            text-shadow: -2px -2px 0 rgb(252, 230, 230), 2px -2px 0 rgb(252, 230, 230), -2px 2px 0 rgb(252, 230, 230), 2px 2px 0 rgb(252, 230, 230);
         }
         .message {
             font-size: 1.5em;
             margin: 20px 0;
         }
         .heart-button, .hidden-button {
-            background-color: #d81b60;
+            background-color: #ff005d;
             color: white;
             padding: 15px 30px;
             border: none;
@@ -34,7 +42,7 @@
             margin-top: 20px;
         }
         .heart-button:hover, .hidden-button:hover {
-            background-color: #ad1457;
+            background-color: #ff005d;
         }
         .hidden-message, .hidden-button, .timer {
             display: none;
@@ -54,9 +62,9 @@
 <body>
     <div class="container">
         <h1>Happy Valentine's Day to FANGFANG ❤️</h1>
-        <p class="message" id="messageText">Press The Button</p>
+        <p class="message" id="messageText"style="font-size: 2em;">Press The Button</p>
         <p class="message" id="messageArrow">👇🏿</p>
-        <button class="heart-button" id="heartButton" onclick="showSurprise()">Click for a Surprise 💝</button>
+        <button class="heart-button" id="heartButton" onclick="showSurprise()">Click for a Surprise</button>
         <p class="timer" id="timer"style="font-size: 26px"></p>
         <p class="hidden-message" id="surpriseMessage0" style="font-size: 20px;"> ขอบคุณที่อยู่ด้วยกันตลอด</p>
         <p class="hidden-message" id="surpriseMessage1" style="font-size: 20px;"> ขอบคุณที่ยังทนทั้งที่ทำตัวไม่น่ารัก</p>
@@ -65,7 +73,7 @@
         <p class="hidden-message" id="surpriseMessage4" style="font-size: 20px;"> ขอโทษที่ผ่านมาทำตัวไม่น่ารัก</p>
         <p class="hidden-message" id="surpriseMessage5" style="font-size: 20px;"> ต่อไปนี้จะทำตัวให้ดีขึ้นนะ</p>
         <p class="hidden-message" id="surpriseMessage6" style="font-size: 20px;"> ขอให้อยู่ด้วยกันไปอีกนานๆเลยนะ💖</p>
-        <button class="hidden-button" id="hiddenButton" onclick="Surprise2()">Another Surprise! 💞</button>
+        <button class="hidden-button" id="hiddenButton" style="text-align: center;" onclick="Surprise2() ">Another Surprise!</button>
         <div class="surprise-image" id="surpriseImage">
             <img src="vday.jpg" alt="A beautiful surprise!">
         </div>
@@ -128,7 +136,7 @@
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                document.getElementById("timer").textContent = `We stay together for ${days} Days ${hours} Hour ${minutes} Min`;
+                document.getElementById("timer").textContent = `🕰️ We stay together for ${days} Days ${hours} Hour ${minutes} Min`;
             }, 1000);
         }
 
