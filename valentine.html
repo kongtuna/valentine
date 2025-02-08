@@ -61,24 +61,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Happy Valentine's Day to FANGFANG ❤️</h1>
+        <h1 id="11">Happy Valentine's Day to FANGFANG ❤️</h1>
         <p class="message" id="messageText"style="font-size: 2em;">Press The Button</p>
         <p class="message" id="messageArrow">👇🏿</p>
         <button class="heart-button" id="heartButton" onclick="showSurprise()">Click for a Surprise</button>
         <p class="timer" id="timer"style="font-size: 26px"></p>
-        <p class="hidden-message" id="surpriseMessage0" style="font-size: 20px;"> ขอบคุณที่อยู่ด้วยกันตลอด</p>
-        <p class="hidden-message" id="surpriseMessage1" style="font-size: 20px;"> ขอบคุณที่ยังทนทั้งที่ทำตัวไม่น่ารัก</p>
-        <p class="hidden-message" id="surpriseMessage2" style="font-size: 20px;"> ขอให้ยิ้มเยอะๆมีความสุขมากๆ</p>
-        <p class="hidden-message" id="surpriseMessage3" style="font-size: 20px;"> ขอให้ไม่เหนื่อยกับงานที่ทำ</p>
-        <p class="hidden-message" id="surpriseMessage4" style="font-size: 20px;"> ขอโทษที่ผ่านมาทำตัวไม่น่ารัก</p>
-        <p class="hidden-message" id="surpriseMessage5" style="font-size: 20px;"> ต่อไปนี้จะทำตัวให้ดีขึ้นนะ</p>
-        <p class="hidden-message" id="surpriseMessage6" style="font-size: 20px;"> ขอให้อยู่ด้วยกันไปอีกนานๆเลยนะ💖</p>
+        <p class="hidden-message" id="surpriseMessage0" style="font-size: 18px;"> ขอบคุณที่อยู่ด้วยกันตลอด</p>
+        <p class="hidden-message" id="surpriseMessage1" style="font-size: 18px;"> ขอบคุณที่ยังทนทั้งที่ทำตัวไม่น่ารัก</p>
+        <p class="hidden-message" id="surpriseMessage2" style="font-size: 18px;"> ขอให้ยิ้มเยอะๆมีความสุขมากๆ</p>
+        <p class="hidden-message" id="surpriseMessage3" style="font-size: 18px;"> ขอให้ไม่เหนื่อยกับงานที่ทำ</p>
+        <p class="hidden-message" id="surpriseMessage4" style="font-size: 18px;"> ขอโทษที่ผ่านมาทำตัวไม่น่ารัก</p>
+        <p class="hidden-message" id="surpriseMessage5" style="font-size: 18px;"> ต่อไปนี้จะทำตัวให้ดีขึ้นนะ</p>
+        <p class="hidden-message" id="surpriseMessage6" style="font-size: 18px;"> ขอให้อยู่ด้วยกันไปอีกนานๆเลยนะ💖</p>
         <button class="hidden-button" id="hiddenButton" style="text-align: center;" onclick="Surprise2() ">Another Surprise!</button>
         <div class="surprise-image" id="surpriseImage">
             <img src="vday.jpg" alt="A beautiful surprise!">
         </div>
-        <p class="hidden-message" id="surpriseMessage7" style="font-size: 20px;"> หวนหวยกับก้องก้องรักฟางฟางน้าา💖</p>
-        <p class="hidden-message" id="surpriseMessage8" style="font-size: 20px;"> จุ้บๆ จ้าาา luv u 💞</p>
+        <p class="hidden-message" id="surpriseMessage7" style="font-size: 18px;"> หวนหวยกับก้องก้องรักฟางฟางน้าา💖</p>
+        <p class="hidden-message" id="surpriseMessage8" style="font-size: 18px;"> จุ้บๆ จ้าาา luv u 💞</p>
     </div>
 
     <script>
@@ -88,6 +88,7 @@
 
         function showSurprise() {
             setTimeout(() => {
+                document.getElementById("11").style.display = "none";
                 document.getElementById("heartButton").style.display = "none";
                 document.getElementById("messageText").style.display = "none";
                 document.getElementById("messageArrow").style.display = "none";
